@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        table,th,td{
+            border:1px solid black;
+            margin-bottom:2rem;
+        }
+
+
+        .sekcja{
+            display:block;
+            border:1px solid gray;
+            padding-top:0;
+            max-width:20rem;
+            text-align:center;
+            text-transform: uppercase;
+            background-color:lightgray;
+            cursor:pointer;
+        }
+
+        h3{
+            margin-top:0;
+            padding-bottom:1rem;
+        }
+
+        .sekcja-chosen h3{
+            display:block;
+            background-color:steelblue;
+        }
+
+        .acc {
+            max-width:20rem;
+            display:none;
+            background-color:lightgray;
+            transition: all .4s ease-in-out;
+        }
+
+        .p-chosen {
+            display:inline-block;
+        }
+        /*
+        button{
+            display:block;
+            margin:1rem;
+            padding:.8rem 2rem;
+            text-transform: uppercase;
+            border:2px solid green;
+            background-color:lightgreen;
+            cursor:pointer;
+            transition:all .3s ease-in-out;
+            font-weight: bold;
+        }
+
+        button:hover{
+            background-color:green;
+        }
+ */
+
+        .photo{
+            margin:0 auto;
+            margin-top:2rem;
+            width:500px;
+        }
+
+
+        #btn1,#btn2{
+            font-size:48px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+        #btn2 {
+            float:right;
+        }
+
+        .sliderSection{
+            margin-top:3rem;
+        }
+    </style>
+
+
+</head>
+<body>
+        <div class="photo">
+
+    <section class="tabela">
+    <div class="container">
+        <h1>Tabela pojazdów</h1>
+        <!--<button>Odśwież tabelę</button>-->
+        <table class='tbl'>
+            <tr>
+                <th>Rok:</th>
+                <th>Przebieg:</th>
+                <th>Cena wyjsciowa:</th>
+                <th>Cena koncowa:</th>
+            </tr>
+
+        </table>
+
+
+    </div>
+</section>
+
+<article class="accordion">
+    <section class='sekcja sekcja-chosen'>
+        <h3>Section 1</h3>
+        <p class='acc p-chosen'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum blanditiis dicta excepturi, necessitatibus amet consequuntur facilis qui aut quis doloremque.</p>
+    </section>
+    <section class='sekcja'>
+        <h3>Section 2</h3>
+        <p class='acc'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum blanditiis dicta excepturi, necessitatibus amet consequuntur facilis qui aut quis doloremque.</p>
+    </section>
+    <section class='sekcja'>
+        <h3>Section 3</h3>
+        <p class='acc'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum blanditiis dicta excepturi, necessitatibus amet consequuntur facilis qui aut quis doloremque.</p>
+    </section>
+    <section class='sekcja'>
+        <h3>Section 4</h3>
+        <p class='acc'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum blanditiis dicta excepturi, necessitatibus amet consequuntur facilis qui aut quis doloremque.</p>
+    </section>
+
+</article>
+<section class="sliderSection">
+
+        <div class="slider">
+        <img src="img1.jpg" alt="Kot">
+    </div>
+        <div class="buttons">
+            <span id='btn1'><</span>
+            <span id='btn2'>></span>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+        <script src="js1.js" type="text/javascript"></script>
+</body>
+</html>
